@@ -2,8 +2,8 @@ def my_collect(array)
   i = 0
   empty_array = []
   while i < array.length
-  my_collect(empty_array) do |i|
-    i +=1
+  empty_array << yield(array[i])
+    i += 1
   end
   empty_array
 end
