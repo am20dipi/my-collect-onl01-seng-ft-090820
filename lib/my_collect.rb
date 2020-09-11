@@ -1,7 +1,8 @@
 def my_collect(array)
   i = 0
   empty_array = []
-  while my_collect(empty_array) do |i|
+  while i < array.length
+  my_collect(empty_array) do |i|
     i +=1
   end
   empty_array
